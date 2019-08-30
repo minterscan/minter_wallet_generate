@@ -1,0 +1,55 @@
+.output-manual {
+  overflow: auto;
+  min-height: 10vh;
+  max-height: 50vh;
+  margin-bottom: .75rem;
+  font-family: 'Inconsolata', monospace;
+
+  .loading-overlay {
+    z-index: 2;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .item {
+    margin: 0 .75rem 0 0;
+  }
+
+  .count {
+    display: flex;
+    align-items: center;
+  }
+
+  .field {
+    align-items: center;
+  }
+
+  .address,
+  .mnemonic {
+    display: flex;
+    align-items: center;
+  }
+
+  .mnemonic {
+    flex-grow: 1;
+
+    input {
+      font-size: .85rem;
+      font-family: 'Inconsolata', monospace;
+    }
+  }
+
+  .controls {
+    flex-shrink: 0;
+  }
+
+  .address .field .field {
+    margin-bottom: 0;
+  }
+}

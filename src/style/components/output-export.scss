@@ -1,0 +1,22 @@
+.output-export {
+  margin-bottom: .75rem;
+
+  .loading-overlay {
+    z-index: 2;
+  }
+
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .howto {
+    text-align: left;
+  }
+
+  textarea {
+    font-size: .85rem;
+    font-family: 'Inconsolata', monospace;
+  }
+}

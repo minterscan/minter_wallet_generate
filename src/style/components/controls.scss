@@ -1,0 +1,14 @@
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 .75rem 0;
+
+  & > * {
+    margin: 0 .75rem 0 0;
+  }
+
+  span {
+    flex-shrink: 0;
+  }
+}
