@@ -40,7 +40,7 @@ export default class OutputImport extends Mixins(Getters) {
   }
 
   protected getCSV(): string {
-    let csv = `Address,Seed,Private Key\n`
+    let csv = `Address,Seed\n`
 
     const rows = this.dataStore.wallets.forEach((wallet: IWallet) => {
       csv += this.getCsvRow(wallet)
@@ -52,9 +52,8 @@ export default class OutputImport extends Mixins(Getters) {
   protected getCsvRow(wallet: IWallet): string {
     const address = wallet.getAddressString()
     const mnemonic = wallet.getMnemonic()
-    const privateKey = wallet.getPrivateKeyString()
 
-    return `${address},${mnemonic},${privateKey}\n`
+    return `${address},${mnemonic}\n`
   }
 
   protected copyCSV() {
